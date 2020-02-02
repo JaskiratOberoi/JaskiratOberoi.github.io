@@ -131,8 +131,8 @@ main .call-to-action-button button {
   color: #eeeeee;
   text-decoration: none;
   border: none;
-  background-color: #05e8ba;
-  background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
+  background-color: #9795ef;
+  background-image: linear-gradient(315deg, #9795ef 0%, #087ee1 74%);
 }
 
 footer {
@@ -140,5 +140,134 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: footer;
+}
+
+#animate-bg {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 40vh;
+  z-index: -10;
+}
+
+.box-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-animation: vertical 10s ease 3s infinite forwards;
+          animation: vertical 10s ease 3s infinite forwards;
+  z-index: inherit;
+}
+
+.box-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
+  font-family: "Fredoka One", cursive;
+  -webkit-animation: rotation 20s linear infinite;
+          animation: rotation 20s linear infinite;
+  bottom: -150px;
+  z-index: -5;
+}
+
+.box-area li:nth-child(1) {
+  left: 86%;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.box-area li:nth-child(2) {
+  left: 12%;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.box-area li:nth-child(3) {
+  left: 70%;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.box-area li:nth-child(4) {
+  left: 6%;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+.box-area li:nth-child(5) {
+  left: 46%;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+.box-area li:nth-child(6) {
+  left: 25%;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.box-area li:nth-child(7) {
+  left: 65%;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.box-area li:nth-child(8) {
+  left: 25%;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.box-area li:nth-child(9) {
+  left: 90%;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+@-webkit-keyframes rotation {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 1;
+  }
+}
+
+@keyframes rotation {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
