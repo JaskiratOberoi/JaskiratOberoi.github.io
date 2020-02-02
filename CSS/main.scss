@@ -130,90 +130,87 @@ main {
 
 footer {
     grid-area: footer;
-}
-
-//Background Animation
-#animate-bg {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 40vh;
-    z-index: -10;
-}
-
-.box-area {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80vw;
-    height: 100vh;
-    overflow: hidden;
-    animation: vertical 10s ease 3s infinite forwards;
-    z-index: inherit;
-    li {
+    //Background Animation
+    #animate-bg {
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 40vh;
+        z-index: -10;
+    }
+    .box-area {
         position: absolute;
-        display: block;
-        list-style: none;
-        color: rgba(0, 0, 0, 0.2);
-        font-size: 2rem;
-        font-family: "Fredoka One", cursive;
-        animation: rotation 20s linear infinite;
-        bottom: -150px;
-        z-index: -5;
+        top: 0;
+        left: 0;
+        width: 80vw;
+        height: 100vh;
+        overflow: hidden;
+        animation: vertical 10s ease 3s infinite forwards;
+        z-index: inherit;
+        li {
+            position: absolute;
+            display: block;
+            list-style: none;
+            color: rgba(0, 0, 0, 0.2);
+            font-size: 2rem;
+            font-family: "Fredoka One", cursive;
+            animation: rotation 20s linear infinite;
+            bottom: -150px;
+            z-index: -5;
+        }
+        li:nth-child(1) {
+            left: 86%;
+            animation-delay: 1s;
+        }
+        li:nth-child(2) {
+            left: 12%;
+            animation-delay: 1.5s;
+            animation-duration: 10s;
+        }
+        li:nth-child(3) {
+            left: 70%;
+            animation-delay: 2.5s;
+            animation-duration: 10s;
+        }
+        li:nth-child(4) {
+            left: 6%;
+            animation-delay: 3s;
+            animation-duration: 20s;
+        }
+        li:nth-child(5) {
+            left: 46%;
+            animation-delay: 1.5s;
+            animation-duration: 20s;
+        }
+        li:nth-child(6) {
+            left: 25%;
+            animation-delay: 3s;
+            animation-duration: 10s;
+        }
+        li:nth-child(7) {
+            left: 65%;
+            animation-delay: 4.5s;
+            animation-duration: 10s;
+        }
+        li:nth-child(8) {
+            left: 25%;
+            animation-delay: 7s;
+            animation-duration: 10s;
+        }
+        li:nth-child(9) {
+            left: 90%;
+            animation-delay: 6s;
+            animation-duration: 10s;
+        }
     }
-    li:nth-child(1) {
-        left: 86%;
-        animation-delay: 1s;
-    }
-    li:nth-child(2) {
-        left: 12%;
-        animation-delay: 1.5s;
-        animation-duration: 10s;
-    }
-    li:nth-child(3) {
-        left: 70%;
-        animation-delay: 2.5s;
-        animation-duration: 10s;
-    }
-    li:nth-child(4) {
-        left: 6%;
-        animation-delay: 3s;
-        animation-duration: 20s;
-    }
-    li:nth-child(5) {
-        left: 46%;
-        animation-delay: 1.5s;
-        animation-duration: 20s;
-    }
-    li:nth-child(6) {
-        left: 25%;
-        animation-delay: 3s;
-        animation-duration: 10s;
-    }
-    li:nth-child(7) {
-        left: 65%;
-        animation-delay: 4.5s;
-        animation-duration: 10s;
-    }
-    li:nth-child(8) {
-        left: 25%;
-        animation-delay: 7s;
-        animation-duration: 10s;
-    }
-    li:nth-child(9) {
-        left: 90%;
-        animation-delay: 6s;
-        animation-duration: 10s;
-    }
-}
-
-@keyframes rotation {
-    100% {
-        transform: translateY(0);
-        opacity: 0;
-    }
-    0% {
-        transform: translateY(-1000px);
-        opacity: 1;
+    @keyframes rotation {
+        100% {
+            transform: translateY(0);
+            opacity: 0;
+        }
+        0% {
+            transform: translateY(-1000px);
+            opacity: 1;
+        }
     }
 }
