@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  z-index: 10;
 }
 
 html {
@@ -161,15 +160,14 @@ footer .social-media li {
 }
 
 footer #animate-bg {
-  padding: 0;
-  margin: 0;
   width: 100vw;
   height: 10vh;
   z-index: -10;
+  position: relative;
 }
 
 footer .box-area {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 80vw;
@@ -235,8 +233,8 @@ footer .box-area li:nth-child(6) {
   left: 25%;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
 }
 
 footer .box-area li:nth-child(7) {
@@ -248,19 +246,19 @@ footer .box-area li:nth-child(7) {
 }
 
 footer .box-area li:nth-child(8) {
-  left: 25%;
+  left: 35%;
   -webkit-animation-delay: 7s;
           animation-delay: 7s;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
 }
 
 footer .box-area li:nth-child(9) {
   left: 90%;
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 @-webkit-keyframes rotation {
@@ -272,7 +270,7 @@ footer .box-area li:nth-child(9) {
   0% {
     -webkit-transform: translateY(-1000px);
             transform: translateY(-1000px);
-    opacity: 1;
+    opacity: 0.5;
   }
 }
 
@@ -285,7 +283,7 @@ footer .box-area li:nth-child(9) {
   0% {
     -webkit-transform: translateY(-1000px);
             transform: translateY(-1000px);
-    opacity: 1;
+    opacity: 0.5;
   }
 }
 /*# sourceMappingURL=main.css.map */
