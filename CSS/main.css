@@ -142,11 +142,24 @@ footer {
   grid-area: footer;
 }
 
+footer .social-media {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  list-style: none;
+  text-align: center;
+}
+
+footer .social-media li {
+  display: inline;
+}
+
 footer #animate-bg {
   padding: 0;
   margin: 0;
   width: 100vw;
-  height: 40vh;
+  height: 10vh;
   z-index: -10;
 }
 
@@ -155,7 +168,7 @@ footer .box-area {
   top: 0;
   left: 0;
   width: 80vw;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
   -webkit-animation: vertical 10s ease 3s infinite forwards;
           animation: vertical 10s ease 3s infinite forwards;

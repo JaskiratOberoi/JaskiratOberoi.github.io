@@ -130,12 +130,23 @@ main {
 
 footer {
     grid-area: footer;
+    .social-media {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        list-style: none;
+        text-align: center;
+        li {
+            display: inline;
+        }
+    }
     //Background Animation
     #animate-bg {
         padding: 0;
         margin: 0;
         width: 100vw;
-        height: 40vh;
+        height: 10vh;
         z-index: -10;
     }
     .box-area {
@@ -143,7 +154,7 @@ footer {
         top: 0;
         left: 0;
         width: 80vw;
-        height: 100vh;
+        height: 90vh;
         overflow: hidden;
         animation: vertical 10s ease 3s infinite forwards;
         z-index: inherit;
