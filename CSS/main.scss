@@ -14,7 +14,7 @@ $colors: (
 body {
   background-color: map-get($colors, primary);
   color: map-get($colors, secondary);
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Fredoka One", cursive;
   font-size: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
