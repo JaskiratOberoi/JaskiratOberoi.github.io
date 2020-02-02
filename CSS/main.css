@@ -111,7 +111,15 @@ main .graphics {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: graphic;
-  place-content: center;
+}
+
+main .graphics img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 60%;
 }
 
 main .call-to-action-button button {

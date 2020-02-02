@@ -104,7 +104,12 @@ main {
     .graphics {
         display: grid;
         grid-area: graphic;
-        place-content: center;
+        img {
+            // margin: 4rem;
+            align-self: center;
+            justify-self: center;
+            height: 60%;
+        }
     }
     .call-to-action-button button {
         padding: 1rem 3rem;
