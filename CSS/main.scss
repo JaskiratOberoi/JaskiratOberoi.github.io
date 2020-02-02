@@ -97,6 +97,9 @@ main {
         grid-area: content;
         align-content: center;
         padding: 3rem;
+        h1 {
+            font-size: 3.5rem;
+        }
         div {
             text-align: justify;
         }
