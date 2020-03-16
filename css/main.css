@@ -390,6 +390,11 @@ body header .navbar-desktop ul .ltr:hover::before {
   width: 100%;
 }
 
+html header .navbar-mobile,
+body header .navbar-mobile {
+  display: none;
+}
+
 ::-moz-selection {
   background-color: black;
   color: white;
@@ -584,5 +589,130 @@ body {
   background: white;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
+}
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    width: 100vw;
+    height: auto;
+    font-size: 12px;
+    margin: 0 !important;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header {
+    width: 100vw;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+  }
+  header .title {
+    padding-left: 15px;
+    font-size: 1rem !important;
+  }
+  header .navbar-desktop {
+    display: none;
+  }
+  header .navbar-mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+  }
+  header .navbar-mobile i {
+    font-size: 1rem;
+  }
+  header .navbar-mobile .main-menu {
+    display: none;
+  }
+  .layered-paper {
+    width: 95% !important;
+    height: 6%;
+    margin: 0;
+    padding: 0;
+  }
+  .hero-section {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+    height: auto;
+    margin: 2rem 1rem !important;
+    width: 100%;
+  }
+  .hero-section .hero-content {
+    width: 90%;
+    height: 100%;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-section .hero-content .brief {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .hero-section .hero-content .intro {
+    font-size: 1.2rem;
+    height: auto;
+    padding: 5px 0;
+  }
+  .hero-section .hero-content button {
+    width: 80%;
+  }
+  .hero-section .hero-content button:visited, .hero-section .hero-content button:active {
+    border: none;
+  }
+  .hero-section .hero-image {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  .roles {
+    width: 100%;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 100px;
+    height: auto;
+  }
+  .roles .role-title {
+    font-size: 2.5rem;
+    height: 50px;
+  }
+  .roles .role-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  .roles .role-cards .cards {
+    height: 250px;
+    padding: 0;
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
