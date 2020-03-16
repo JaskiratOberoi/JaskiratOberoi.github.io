@@ -2,6 +2,31 @@
 @import "_timeline";
 // @import "_typography";
 // @include responsive-font(5vw, 35px, 150px, 50px);
+//font-faces
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Caveat', cursive;
+// font-family: 'Pacifico', cursive;
+
+@import url("https://fonts.googleapis.com/css?family=Caveat|Lato|Montserrat|Pacifico&display=swap");
+
+@font-face {
+  font-family: "Ostrich Sans Inline";
+  src: url("../res/OstrichSansInline-Regular.otf");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../res/quicksand/Quicksand-Regular.otf");
+}
+@font-face {
+  font-family: "Monoton";
+  src: url("../res/monoton/Monoton-Regular.ttf");
+}
+@font-face {
+  font-family: "Norwester";
+  src: url("../res/norwester/norwester.otf");
+}
 
 * {
   overflow-x: hidden;
@@ -66,6 +91,11 @@ body {
           display: inline-block;
           position: relative;
           opacity: 0.75;
+
+          a {
+            text-decoration: none;
+            color: #222222;
+          }
 
           &:hover {
             opacity: 1;
@@ -157,7 +187,7 @@ body {
       background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
       font-size: 1.4rem;
       font-weight: 500;
-      letter-spacing: 1px;
+      font-family: "Montserrat", sans-serif;
       transition: all 0.2s ease-in-out;
 
       &:hover {
@@ -185,10 +215,11 @@ body {
   justify-content: center;
   align-items: center;
   .role-title {
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 3.5rem;
+    font-weight: 450;
     width: 100%;
     text-align: center;
+    font-family: "Lato", sans-serif;
   }
 
   .role-cards {
@@ -216,6 +247,7 @@ body {
         text-align: center;
         font-size: 1.1rem;
         font-weight: 600;
+        // font-family: "Quicksand";
       }
       &:hover {
         transform: translateY(-5px);

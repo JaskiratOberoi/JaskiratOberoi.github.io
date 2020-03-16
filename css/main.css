@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat|Lato|Montserrat|Pacifico&display=swap");
 .loader-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,6 +275,26 @@
   width: 12px;
 }
 
+@font-face {
+  font-family: "Ostrich Sans Inline";
+  src: url("../res/OstrichSansInline-Regular.otf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../res/quicksand/Quicksand-Regular.otf");
+}
+
+@font-face {
+  font-family: "Monoton";
+  src: url("../res/monoton/Monoton-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Norwester";
+  src: url("../res/norwester/norwester.otf");
+}
+
 * {
   overflow-x: hidden;
   margin: 0;
@@ -361,6 +382,12 @@ body header .navbar-desktop ul li {
   display: inline-block;
   position: relative;
   opacity: 0.75;
+}
+
+html header .navbar-desktop ul li a,
+body header .navbar-desktop ul li a {
+  text-decoration: none;
+  color: #222222;
 }
 
 html header .navbar-desktop ul li:hover,
@@ -478,7 +505,7 @@ body {
   background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
   font-size: 1.4rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -519,10 +546,11 @@ body {
 }
 
 .roles .role-title {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 3.5rem;
+  font-weight: 450;
   width: 100%;
   text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
 .roles .role-cards {
