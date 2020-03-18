@@ -371,6 +371,19 @@ body header .title span a:hover {
   cursor: pointer;
 }
 
+html header .navbar-desktop,
+body header .navbar-desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 html header .navbar-desktop ul,
 body header .navbar-desktop ul {
   display: -webkit-box;
