@@ -756,15 +756,25 @@ footer span {
     height: auto;
     padding: 5px 0;
   }
-  .hero-section .hero-content button {
+  .hero-section .hero-content form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero-section .hero-content form button {
     width: 80%;
     margin: 10px;
+    font-size: 1rem;
   }
-  .hero-section .hero-content button a {
+  .hero-section .hero-content form button a {
     text-decoration: none;
     color: inherit;
   }
-  .hero-section .hero-content button a:visited, .hero-section .hero-content button a:active, .hero-section .hero-content button a:hover {
+  .hero-section .hero-content form button a:visited, .hero-section .hero-content form button a:active, .hero-section .hero-content form button a:hover {
     border: none;
   }
   .hero-section .hero-image {
