@@ -346,6 +346,7 @@ html header .title a,
 body header .title a {
   text-decoration: none;
   color: #222222;
+  cursor: pointer;
 }
 
 html header .title span,
@@ -536,6 +537,15 @@ body {
           transform: translateY(-2px);
 }
 
+.hero-section .hero-content button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-section .hero-content button a:visited, .hero-section .hero-content button a:active, .hero-section .hero-content button a:hover {
+  border: none;
+}
+
 .hero-section .hero-image {
   width: 90%;
   overflow: hidden;
@@ -691,7 +701,7 @@ footer span {
     font-size: 1rem !important;
   }
   header .navbar-desktop {
-    display: none;
+    display: none !important;
   }
   header .navbar-mobile {
     display: -webkit-box !important;
@@ -712,7 +722,7 @@ footer span {
     display: none;
   }
   .layered-paper {
-    width: 95% !important;
+    width: 95%;
     height: 6%;
     margin: 0;
     padding: 0;
@@ -748,8 +758,13 @@ footer span {
   }
   .hero-section .hero-content button {
     width: 80%;
+    margin: 10px;
   }
-  .hero-section .hero-content button:visited, .hero-section .hero-content button:active {
+  .hero-section .hero-content button a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .hero-section .hero-content button a:visited, .hero-section .hero-content button a:active, .hero-section .hero-content button a:hover {
     border: none;
   }
   .hero-section .hero-image {

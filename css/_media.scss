@@ -22,7 +22,7 @@
       font-size: 1rem !important;
     }
     .navbar-desktop {
-      display: none;
+      display: none !important;
     }
 
     .navbar-mobile {
@@ -41,7 +41,7 @@
   }
 
   .layered-paper {
-    width: 95% !important;
+    width: 95%;
     height: 6%;
     margin: 0;
     padding: 0;
@@ -73,10 +73,16 @@
 
       button {
         width: 80%;
+        margin: 10px;
 
-        &:visited,
-        &:active {
-          border: none;
+        a {
+          text-decoration: none;
+          color: inherit;
+          &:visited,
+          &:active,
+          &:hover {
+            border: none;
+          }
         }
       }
     }
